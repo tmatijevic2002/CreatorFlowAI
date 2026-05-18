@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-rijeka-blue: #4f46e5;
+  --color-rijeka-dark: #1e1b4b;
+  --color-rijeka-emerald: #10b981;
+  --color-rijeka-bg: #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-rijeka-bg text-slate-900 antialiased;
+  }
+}
